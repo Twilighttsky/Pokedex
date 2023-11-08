@@ -15,7 +15,7 @@ const next = document.querySelector('.btn-next');
 let searchPokemon = 0
 
 // Conectando a Poke-Api
-    async function fetchPokemon(pokemon) {
+    const fetchPokemon = async(pokemon) => {
         const apiResponse = await fetch(`https:pokeapi.co/api/v2/pokemon/${pokemon}`);
 
 
